@@ -37,10 +37,25 @@
             margin-bottom: 8px;
             color: #fff;
         }
+        .app-card .app-icon {
+            font-size: 1.8rem;
+            margin-right: 8px;
+        }
         .app-card p {
             color: #aaa;
             line-height: 1.6;
         }
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .badge-free { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
+        .badge-premium { background: rgba(59, 130, 246, 0.2); color: #64b5f6; }
         .contact {
             background: #1e3a2f;
             border-radius: 16px;
@@ -60,45 +75,87 @@
             color: #555;
             font-size: 0.9em;
         }
+        .site-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 24px;
+            background: #3b6cb5;
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .site-link:hover { background: #2d5a9e; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>MaLicorne</h1>
-        <p class="subtitle">Applications educatives pour enfants</p>
+        <p class="subtitle">7 applications éducatives pour enfants du CP au CM2</p>
+
+        <a href="https://malicorne-web.vercel.app" class="site-link">Accéder à la plateforme</a>
+
+        <div style="margin-top: 32px;"></div>
 
         <div class="app-card">
-            <h2>MyDictee</h2>
-            <p>Application d'entrainement a la dictee francaise. Ecoutez les mots, ecrivez-les et verifiez vos reponses. Importez vos propres textes ou utilisez la reconnaissance optique de caracteres (OCR).</p>
+            <h2><span class="app-icon">&#x1F4DD;</span>MyDictée <span class="badge badge-premium">Premium</span></h2>
+            <p>Créez des dictées personnalisées. L'enfant écoute et écrit, puis découvre ses erreurs avec un score détaillé. Importez vos propres textes (.txt) ou utilisez la reconnaissance optique de caractères (OCR) depuis une photo.</p>
         </div>
 
         <div class="app-card">
-            <h2>MyMultiplication</h2>
-            <p>Application d'entrainement aux tables de multiplication. Choisissez les tables a reviser, entrainez-vous et suivez vos progres.</p>
+            <h2><span class="app-icon">&#x1F4DA;</span>MyConjugaison <span class="badge badge-free">Gratuit</span></h2>
+            <p>48 verbes, 4 temps (présent, futur, passé composé, imparfait), 2 niveaux de difficulté. Révisez les règles de conjugaison et pratiquez avec des exercices interactifs par groupe de verbes.</p>
         </div>
 
         <div class="app-card">
-            <h2>MyConjugaison</h2>
-            <p>Application d'entrainement a la conjugaison francaise. Pratiquez les differents groupes de verbes et temps de conjugaison.</p>
+            <h2><span class="app-icon">&#x2716;</span>MyMultiplication <span class="badge badge-free">Gratuit</span></h2>
+            <p>Tables de multiplication de 1 à 9, calcul mental à plusieurs chiffres. 3 modes pour progresser à son rythme : tables, niveau 1 (2-3 chiffres) et niveau 2 (3-4 chiffres).</p>
+        </div>
+
+        <div class="app-card">
+            <h2><span class="app-icon">&#x1F4D0;</span>MyFraction <span class="badge badge-free">Gratuit</span></h2>
+            <p>Exercices de fractions du CE2 à la 6ème. Simplification, addition, soustraction, multiplication, division, comparaison, nombres mixtes et conversion en décimal. Cours intégré avec explications étape par étape.</p>
+        </div>
+
+        <div class="app-card">
+            <h2><span class="app-icon">&#x1F4D6;</span>MyVocabulaire <span class="badge badge-premium">Premium</span></h2>
+            <p>1000 mots français avec définitions. Associez chaque mot à sa définition et apprenez en jouant.</p>
+        </div>
+
+        <div class="app-card">
+            <h2><span class="app-icon">&#x1F30D;</span>MyGéographie <span class="badge badge-premium">Premium</span></h2>
+            <p>Quiz de géographie par niveau (CP au CM2). Continents, France, Europe et monde : 300 questions pour explorer la planète avec des explications après chaque réponse.</p>
+        </div>
+
+        <div class="app-card">
+            <h2><span class="app-icon">&#x1F3B5;</span>MyPoésie <span class="badge badge-premium">Premium</span></h2>
+            <p>Importez une poésie (saisie, fichier .txt ou photo OCR), écoutez-la ligne par ligne ou en entier, puis passez en mode récitation vocale. L'app vérifie la récitation et aide l'élève quand il bloque en révélant les mots un par un.</p>
+        </div>
+
+        <div class="contact">
+            <h2>Tarifs</h2>
+            <p>
+                <strong>MyConjugaison</strong>, <strong>MyMultiplication</strong> et <strong>MyFraction</strong> sont entièrement gratuits, sans abonnement.<br><br>
+                L'abonnement Premium à <strong>20 &euro; / an</strong> donne accès à MyDictée, MyVocabulaire, MyGéographie et MyPoésie, avec profils enfants illimités et historique complet.
+            </p>
         </div>
 
         <div class="contact">
             <h2>Besoin d'aide ?</h2>
             <p>
-                Pour toute question, suggestion ou probleme technique, contactez-nous :<br><br>
+                Pour toute question, suggestion ou problème technique, contactez-nous :<br><br>
                 Email : <a href="mailto:malicorne.apps@gmail.com">malicorne.apps@gmail.com</a><br><br>
-                Nous repondons generalement sous 48 heures.
+                Nous répondons généralement sous 48 heures.
             </p>
         </div>
 
         <div class="contact">
-            <h2>Confidentialite</h2>
+            <h2>Confidentialité</h2>
             <p>
-                Nos applications ne collectent aucune donnee personnelle. Toutes les informations (profils enfants, historique des exercices) sont stockees localement sur votre appareil et ne sont jamais transmises a des serveurs externes.
+                Nos applications ne collectent aucune donnée personnelle sensible. Les profils enfants et l'historique des exercices sont stockés localement sur votre appareil et synchronisés de manière sécurisée via Firebase pour permettre l'accès multi-appareils. Aucune donnée n'est partagée avec des tiers.
             </p>
         </div>
 
-        <p class="footer">&copy; 2025 MaLicorne. Tous droits reserves.</p>
+        <p class="footer">&copy; 2026 MaLicorne. Tous droits réservés.</p>
     </div>
 </body>
 </html>
